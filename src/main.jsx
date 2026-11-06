@@ -6,7 +6,6 @@ import {
   Github, Menu, X, RotateCcw
 } from "lucide-react";
 import "./style.css";
-import videoSource from './assets/robot.mp4';
 
 const starterPrompts = [
   { icon: "✦", title: "اكتب لي فكرة إبداعية", text: "اقترح علي فكرة إبداعية ومميزة لمشروع جديد." },
@@ -210,9 +209,6 @@ function App() {
             <div className="welcome">
               <div className="welcome-orb"><div className="orb-core"><Sparkles size={30} /></div><span className="orb-ring ring-a" /><span className="orb-ring ring-b" /></div>
               <div className="eyebrow"><span /> مساحة أفكارك تبدأ من هنا</div>
-              <video className="video" autoPlay muted loop playsInline>
-                <source src={videoSource} type="video/mp4" />
-              </video>
               <h1>مرحباً، كيف يمكنني<br /><span>مساعدتك اليوم؟</span></h1>
               <p className="welcome-subtitle">اسأل، استكشف، ابتكر. أنا هنا لأحوّل أفكارك إلى خطوات واضحة.</p>
               <div className="suggestions">
